@@ -1,14 +1,14 @@
 {
   "version": "independent",
   "npmClient": "yarn",
-  "useWorkspaces": true,
-  "packages": [
-    "packages/*"
-  ],
+  "packages": ["packages/*"],
   "command": {
     "publish": {
-      "conventionalCommits": true,
+      "allowBranch": "master",
+      "verifyAccess": false,
       "message": "chore(release): publish",
+      "conventionalCommits": true,
+      "commitHooks": false,
       "registry": "https://registry.npmjs.org/"
     },
     "version": {
