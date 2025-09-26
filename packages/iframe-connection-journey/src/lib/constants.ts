@@ -1,1 +1,5 @@
-export const DATA_ONE_VALID_ORIGINS = ['https://connect.data.one', 'https://connect-sandbox.data.one', `http://localhost:${process.env.PORT || 3000}`];
+export const DATA_ONE_VALID_ORIGINS = [
+    'https://connect.data.one',
+    'https://connect-sandbox.data.one',
+    `http://localhost:${process.env.PORT || 3000}`,
+];
