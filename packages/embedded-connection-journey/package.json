@@ -46,7 +46,8 @@
     "prepublishOnly": "yarn clean && yarn build"
   },
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "registry": "https://clearscoredev.jfrog.io/artifactory/api/npm/npm-public/"
   },
   "volta": {
     "node": "20.19.0",
