@@ -43,7 +43,7 @@
     "check:types": "lerna run check-types",
     "ci:publish": "lerna publish from-git --yes",
     "ci:test": "lerna run ci:test",
-    "ci:version": "yarn build && lerna version --no-commit-hooks --no-push --yes",
+    "ci:version": "yarn build && lerna version --no-commit-hooks --yes",
     "ci:version:prerelease": "lerna version prerelease --no-commit-hooks --no-changelog --no-push --yes",
     "prepare": "husky"
   },
