@@ -5,10 +5,8 @@ import {
     JourneyStatus,
     JourneyEventType,
     JourneyEvent,
-    OnCompleteCallback,
     OnErrorCallback,
     OnExitCallback,
-    PostMessageData,
     SandboxPermission,
     IframeConfig,
 } from './types';
@@ -35,10 +33,8 @@ export type {
     JourneyStatus,
     JourneyEventType,
     JourneyEvent,
-    OnCompleteCallback,
     OnErrorCallback,
     OnExitCallback,
-    PostMessageData,
     SandboxPermission,
     IframeConfig,
 };

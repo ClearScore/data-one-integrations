@@ -9,7 +9,7 @@
       "message": "chore(release): publish",
       "conventionalCommits": true,
       "commitHooks": false,
-      "registry": "https://registry.npmjs.org/"
+      "registry": "https://clearscoredev.jfrog.io/artifactory/api/npm/npm-public/"
     },
     "version": {
       "allowBranch": ["main", "master"],

@@ -92,7 +92,6 @@ describe('Journey', () => {
             const config = {
                 connectionUrl: 'https://connect.data.one?token=test-token',
                 sessionId: 'test-session-123',
-                onComplete: jest.fn(),
                 onError: jest.fn(),
                 onExit: jest.fn(),
             };
@@ -140,7 +139,6 @@ describe('Journey', () => {
             const config = {
                 connectionUrl: 'https://connect.data.one?token=test-token',
                 sessionId: 'test-session-123',
-                onComplete: jest.fn(),
                 onError: jest.fn(),
                 onExit: jest.fn(),
             };
