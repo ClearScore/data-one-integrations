@@ -12,8 +12,10 @@
       "registry": "https://clearscoredev.jfrog.io/artifactory/api/npm/npm-public/"
     },
     "version": {
-      "allowBranch": ["main", "master"],
-      "conventionalCommits": true
+      "allowBranch": ["master"],
+      "conventionalCommits": true,
+      "push": false,
+      "commitHooks": false
     }
   }
 }

@@ -39,7 +39,6 @@
     "test": "lerna run test",
     "lint": "lerna run lint",
     "lint:fix": "lerna run lint:fix",
-    "version": "lerna version",
     "check:types": "lerna run check-types",
     "ci:publish": "lerna publish from-git --yes",
     "ci:test": "lerna run ci:test",

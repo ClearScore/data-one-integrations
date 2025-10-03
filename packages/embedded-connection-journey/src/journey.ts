@@ -140,7 +140,6 @@ export class Journey implements JourneyInstance {
             }
 
             const token = url.searchParams.get('token');
-            console.log('🚀 ~ Journey ~ validateConfig ~ token:', token);
 
             // Validate token parameter
             if (!token || token.trim().length === 0) {
