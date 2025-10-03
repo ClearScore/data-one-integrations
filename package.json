@@ -1,11 +1,11 @@
 {
   "name": "data-one-integrations",
   "version": "1.0.0",
+  "packageManager": "yarn@3.2.4",
   "description": "Public packages that support partners integrating with D·One services.",
   "author": "Kevin Kanyingi (kevin.kanyingi@clearscore.com)",
   "license": "UNLICENSED",
   "private": true,
-  "packageManager": "yarn@1.22.19",
   "publishConfig": {
     "registry": "https://clearscoredev.jfrog.io/artifactory/api/npm/npm-public/"
   },
@@ -52,6 +52,6 @@
   },
   "volta": {
     "node": "22.14.0",
-    "yarn": "1.22.19"
+    "yarn": "3.2.4"
   }
 }

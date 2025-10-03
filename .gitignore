@@ -39,8 +39,9 @@ jspm_packages/
 # TypeScript cache
 *.tsbuildinfo
 
-# Optional npm cache directory
+# Optional npm/yarn cache directory
 .npm
+.yarn
 
 # Optional eslint cache
 .eslintcache
