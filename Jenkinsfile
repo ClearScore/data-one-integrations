@@ -1,5 +1,5 @@
 #!groovy
-@Library('cs-pipeline@hotfix/DATA1-2839-publish') _
+@Library('cs-pipeline') _
 buildJsLibPipeline([
   lib_name: 'data-one-integrations',
   node_version: '22.14.0',
