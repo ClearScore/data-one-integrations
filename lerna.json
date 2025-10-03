@@ -1,21 +1,18 @@
 {
-  "version": "independent",
   "npmClient": "yarn",
-  "packages": ["packages/*"],
+  "concurrency": 4,
+  "exact": true,
+  "version": "independent",
   "command": {
     "publish": {
       "allowBranch": "master",
       "verifyAccess": false,
-      "message": "chore(release): publish",
+      "message": "chore(repo): publish",
       "conventionalCommits": true,
       "commitHooks": false,
       "registry": "https://clearscoredev.jfrog.io/artifactory/api/npm/npm-public/"
-    },
-    "version": {
-      "allowBranch": ["master"],
-      "conventionalCommits": true,
-      "push": false,
-      "commitHooks": false
     }
-  }
+  },
+  "ignoreChanges": ["**/*.test.ts", "**/*.md", "**/coverage/**", "coverage/**"],
+  "$schema": "node_modules/lerna/schemas/lerna-schema.json"
 }
