@@ -5,6 +5,7 @@
   "author": "Kevin Kanyingi (kevin.kanyingi@clearscore.com)",
   "license": "UNLICENSED",
   "private": true,
+  "packageManager": "yarn@1.22.19",
   "publishConfig": {
     "registry": "https://clearscoredev.jfrog.io/artifactory/api/npm/npm-public/"
   },
