@@ -15,18 +15,20 @@ A lightweight JavaScript library that enables you to seamlessly integrate the DÂ
 
 ### NPM/Yarn
 
+> Note: The package is published to the ClearScore Artifactory registry, so the --registry flag is required.
+
 ```bash
 # Using npm
-npm install @dataone/embedded-connection-journey
+npm install @dataone/embedded-connection-journey@0.1 --registry=https://clearscoredev.jfrog.io/artifactory/api/npm/npm-public/
 
 # Using yarn
-yarn add @dataone/embedded-connection-journey
+yarn add @dataone/embedded-connection-journey@0.1 --registry=https://clearscoredev.jfrog.io/artifactory/api/npm/npm-public/
 ```
 
 ### CDN
 
 ```html
-<script src="https://unpkg.com/@dataone/embedded-connection-journey/dist/iife/index.js"></script>
+<script src="https://data.one/external/assets/packages/embedded-connection-journey/v0.1/iife/index.min.js"></script>
 ```
 
 ## Quick Start
@@ -65,7 +67,7 @@ const journey = createJourney({
   <body>
     <button id="connect-btn">Connect Bank Account</button>
 
-    <script src="https://unpkg.com/@dataone/embedded-connection-journey/dist/iife/index.js"></script>
+    <script src="https://data.one/external/assets/packages/embedded-connection-journey/v0.1/iife/index.min.js"></script>
     <script>
       document.getElementById('connect-btn').addEventListener('click', function () {
         const journey = window.__dataone.createJourney({

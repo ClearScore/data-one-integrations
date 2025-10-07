@@ -165,9 +165,32 @@ export class MessageHandler {
         };
 
         try {
-            iframe.contentWindow.postMessage(message, DATA_ONE_VALID_ORIGINS[0]);
+            // Get the iframe's actual origin from its src attribute
+            const iframeOrigin = this.getIframeOrigin(iframe);
+            if (iframeOrigin && DATA_ONE_VALID_ORIGINS.includes(iframeOrigin)) {
+                iframe.contentWindow.postMessage(message, iframeOrigin);
+            } else {
+                console.warn('D·One Iframe Journey: Invalid iframe origin, falling back to first valid origin');
+                iframe.contentWindow.postMessage(message, DATA_ONE_VALID_ORIGINS[0]);
+            }
         } catch (error) {
             console.error('D·One Iframe Journey: Error sending message to iframe', error);
+        }
+    }
+
+    /**
+     * Extract origin from iframe src URL
+     */
+    private getIframeOrigin(iframe: HTMLIFrameElement): string | null {
+        try {
+            const src = iframe.src;
+            if (!src) return null;
+
+            const url = new URL(src);
+            return url.origin;
+        } catch (error) {
+            console.warn('D·One Iframe Journey: Error extracting iframe origin', error);
+            return null;
         }
     }
 
