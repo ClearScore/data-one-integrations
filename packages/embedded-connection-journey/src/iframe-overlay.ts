@@ -139,7 +139,7 @@ export class IframeOverlay {
 
         // Configure iframe with proper sandboxing
         const iframeConfig: IframeConfig = {
-            src: `${connectionUrl}&sessionId=${sessionId}`,
+            src: `${connectionUrl}&sessionId=${sessionId}&fromIframe=true`,
             id: `dataone-iframe-${sessionId}`,
             'data-session-id': sessionId,
             title: 'D·One Connection Journey',

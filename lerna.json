@@ -7,10 +7,11 @@
     "publish": {
       "allowBranch": "master",
       "verifyAccess": false,
-      "message": "chore(repo): publish",
+      "message": "chore(repo): publish %s",
       "conventionalCommits": true,
       "commitHooks": false,
-      "registry": "https://clearscoredev.jfrog.io/artifactory/api/npm/npm-public/"
+      "registry": "https://clearscoredev.jfrog.io/artifactory/api/npm/npm-public/",
+      "createRelease": "github"
     }
   },
   "ignoreChanges": ["**/*.test.ts", "**/*.md", "**/coverage/**", "coverage/**"],
