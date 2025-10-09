@@ -1,6 +1,6 @@
 {
   "name": "@dataone/embedded-connection-journey",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Launch the D·One connection journey in an iframe within your own website",
   "main": "dist/esm/index.min.mjs",
   "browser": "dist/esm/index.min.mjs",
