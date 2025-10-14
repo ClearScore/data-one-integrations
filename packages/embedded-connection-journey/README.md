@@ -171,6 +171,18 @@ This package implements several security measures:
 - **Session Validation**: Validates session IDs in all communications
 - **XSS Protection**: Sanitizes and validates all incoming data
 
+### Content Security Policy (CSP) & Cross-Origin Resource Sharing (CORS)
+
+**CSP**:  
+You may need to update your site's Content Security Policy if you have restrictions on which domains can embed content in an `<iframe>`.  
+Since the D·One Embedded Connection Journey is rendered in an iframe from a different origin, your site's CSP must allow framing **from the following domains**:
+
+- `https://connect.data.one` (production)
+- `https://connect-sandbox.data.one` (sandbox/testing)
+
+**CORS**:  
+You do **not** need to configure CORS for embedding the journey on your site, since the journey is loaded in an iframe and no cross-origin XHR/fetch requests are made between your application and the iframe.
+
 ## Error Handling
 
 The package provides comprehensive error handling with the following properties:
