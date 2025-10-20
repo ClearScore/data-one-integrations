@@ -289,6 +289,7 @@ export class IframeOverlay {
             'allow-forms',
             'allow-popups',
             'allow-popups-to-escape-sandbox',
+            'allow-top-navigation',
             'allow-top-navigation-by-user-activation',
             'allow-modals',
             'allow-storage-access-by-user-activation',
