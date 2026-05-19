@@ -3,6 +3,10 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.4](https://github.com/clearscore/data-one-integrations/compare/@dataone/embedded-connection-journey@0.1.3...@dataone/embedded-connection-journey@0.1.4) (2026-05-19)
+
+**Note:** Version bump only for package @dataone/embedded-connection-journey
+
 ## [0.1.3](https://github.com/clearscore/data-one-integrations/compare/@dataone/embedded-connection-journey@0.1.2...@dataone/embedded-connection-journey@0.1.3) (2025-10-20)
 
 ### Bug Fixes
