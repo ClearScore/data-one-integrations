@@ -2,7 +2,7 @@
   "name": "data-one-integrations",
   "version": "1.0.0",
   "packageManager": "yarn@3.2.4",
-  "description": "Public packages that support partners integrating with D·One services.",
+  "description": "Public packages that support partners integrating with D·One services",
   "author": "Kevin Kanyingi (kevin.kanyingi@clearscore.com)",
   "license": "UNLICENSED",
   "private": true,
