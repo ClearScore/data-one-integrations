@@ -70,6 +70,9 @@ export class Journey implements JourneyInstance {
         }
 
         try {
+            // Load the connection URL into the iframe now that the journey is actually starting
+            this.overlay.load();
+
             // Show the overlay with loading spinner
             this.overlay.show();
 
