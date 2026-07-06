@@ -103,6 +103,7 @@ export class IframeOverlay {
     private isVisible = false;
     private bodyScrollStyle = document.body.style.overflow;
     private animationStyle: HTMLStyleElement | null = null;
+    private pendingSrc: string | null = null;
 
     /**
      * Create the overlay and iframe elements with loading spinner
@@ -154,6 +155,7 @@ export class IframeOverlay {
             },
         };
 
+        this.pendingSrc = iframeConfig.src;
         this.configureIframe(iframeConfig);
 
         this.container.appendChild(this.iframe);
@@ -164,6 +166,20 @@ export class IframeOverlay {
 
         // Add overlay to document
         document.body.appendChild(this.overlay);
+    }
+
+    /**
+     * Load the connection URL into the iframe, triggering the actual network request.
+     * Deferred until the journey is explicitly started so createJourney() alone never
+     * consumes the single-use connection token.
+     */
+    load(): void {
+        if (!this.iframe || !this.pendingSrc) {
+            return;
+        }
+
+        this.iframe.src = this.pendingSrc;
+        this.pendingSrc = null;
     }
 
     /**
@@ -312,7 +328,7 @@ export class IframeOverlay {
         }
 
         this.iframe.id = config.id;
-        this.iframe.src = config.src;
+        // src intentionally not set here — deferred to load(), triggered by Journey.start()
         this.iframe.title = config.title;
         this.iframe.setAttribute('data-session-id', config['data-session-id']);
         this.iframe.sandbox.value = config.sandbox.join(' ');
